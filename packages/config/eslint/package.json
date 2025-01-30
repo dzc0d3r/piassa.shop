@@ -1,0 +1,11 @@
+{
+  "name": "@piassa/eslint-config",
+  "version": "0.1.0",
+  "private": true,
+  "devDependencies": {
+    "@eslint/compat": "^1.2.5",
+    "@eslint/eslintrc": "^3.2.0",
+    "eslint-config-next": "15.1.6",
+    "globals": "^15.14.0"
+  }
+}

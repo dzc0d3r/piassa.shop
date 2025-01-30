@@ -1,0 +1,31 @@
+{
+  "name": "shop",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --turbopack",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "test": "vitest run --coverage",
+    "type-check": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@piassa/ui": "workspace:*",
+    "next": "15.1.6",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "@piassa/eslint-config": "workspace:*",
+    "@piassa/tailwind-config": "workspace:*",
+    "@piassa/typescript-config": "workspace:*",
+    "@tailwindcss/postcss": "^4.0.1",
+    "@types/node": "^22.12.0",
+    "@types/react": "^19.0.8",
+    "@types/react-dom": "^19.0.3",
+    "postcss": "^8.5.1",
+    "tailwindcss": "^4.0.1",
+    "typescript": "^5.7.3"
+  }
+}

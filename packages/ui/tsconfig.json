@@ -1,0 +1,10 @@
+{
+  "extends": "@piassa/typescript-config/react-library.json",
+  "compilerOptions": {
+    "paths": {
+      "@/*": ["./*"]
+    }
+  },
+  "include": ["."],
+  "exclude": ["node_modules", "dist"]
+}
