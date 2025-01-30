@@ -1,5 +1,12 @@
-import { Select, SelectContent, SelectGroup, SelectItem, SelectLabel, SelectTrigger, SelectValue } from "@piassa/ui/components/select";
-
+import {
+  Select,
+  SelectContent,
+  SelectGroup,
+  SelectItem,
+  SelectLabel,
+  SelectTrigger,
+  SelectValue,
+} from "@piassa/ui/components/select";
 
 export default function Page(): React.JSX.Element {
   return (
