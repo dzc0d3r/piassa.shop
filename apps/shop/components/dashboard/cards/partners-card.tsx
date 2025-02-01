@@ -23,7 +23,7 @@ const PartnerCard = () => {
           <Button
             variant="default"
             size="sm"
-            className="abolute flex gap-4 text-start font-medium transition-all duration-500 ease-in-out"
+            className="flex gap-4 text-start font-medium transition-all duration-500 ease-in-out"
           >
             {"Ajouter nouveax partner"}
             <AiOutlinePlus className="!h-5 !w-5" />
