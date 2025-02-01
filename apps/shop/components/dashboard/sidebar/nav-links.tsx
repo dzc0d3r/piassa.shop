@@ -11,7 +11,7 @@ const NavLinks = () => {
   return (
     <section className="my-7 flex h-full flex-col items-center justify-start">
       <div className="flex flex-col rounded-full bg-black/10 p-1 backdrop-blur-xl">
-        <Button className="h-9 w-9 !gap-0 !rounded-b-none !rounded-t-full bg-transparent">
+        <Button className="bg-primary h-9 w-9 !gap-0 !rounded-b-none !rounded-t-full">
           <FaHandshakeAngle className="!h-5.5 !w-5.5 bg-transparent text-white" />
         </Button>
         <Button className="h-9 w-9 !rounded-b-full !rounded-t-none bg-transparent">

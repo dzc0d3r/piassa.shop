@@ -1,3 +1,4 @@
+import wilayas from "@/mock-data/wilayas";
 import {
   Select,
   SelectContent,
@@ -12,14 +13,19 @@ import { FiMapPin } from "react-icons/fi";
 function WilayaSelect() {
   return (
     <Select>
-      <SelectTrigger className="mx-2 h-11 w-[180px] gap-1 bg-[#933123] text-white">
+      <SelectTrigger className="selection: mx-2 w-[180px] gap-1 border-none bg-[#933123] text-sm text-white">
         <FiMapPin className="h-3 w-3 text-white" />
         <SelectValue placeholder="Select Wilaya" />
       </SelectTrigger>
       <SelectContent>
         <SelectGroup>
-          <SelectLabel>Fruits</SelectLabel>
-          <SelectItem value="apple">Apple</SelectItem>
+          <SelectLabel>Wilaya</SelectLabel>
+          {wilayas.map((wilaya) => (
+            <SelectItem key={wilaya.id} value={wilaya.id}>
+              {wilaya.name}
+            </SelectItem>
+          ))}
+
           <SelectItem value="banana">Banana</SelectItem>
           <SelectItem value="blueberry">Blueberry</SelectItem>
           <SelectItem value="grapes">Grapes</SelectItem>

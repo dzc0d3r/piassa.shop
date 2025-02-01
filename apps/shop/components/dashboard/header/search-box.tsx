@@ -15,7 +15,7 @@ export const SearchBox = () => {
       <Input
         type="text"
         placeholder="Recherche"
-        className="h-11 w-[40%] bg-[#933123] p-5 pl-11 font-medium text-white placeholder:text-lg placeholder:text-white focus-visible:ring-0 focus-visible:ring-offset-0"
+        className="placeholder:text-md w-[40%] border-none bg-[#933123] p-5 pl-11 font-medium text-white placeholder:text-white focus-visible:ring-0 focus-visible:ring-offset-0"
       />
     </>
   );
