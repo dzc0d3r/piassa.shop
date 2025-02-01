@@ -3,6 +3,7 @@
 
 import { useEffect, useState } from "react";
 
+
 export default function LiveClock() {
   const [time, setTime] = useState(new Date());
 
@@ -15,10 +16,10 @@ export default function LiveClock() {
   }, []);
 
   return (
-    <div className="-mt-1 flex flex-col items-center justify-center gap-2 text-center text-white">
+    <div className="-mt-1 flex flex-col items-center justify-center gap-2 rounded-md bg-white/10 pb-1 text-center text-white backdrop-blur-xl">
       <div className="h-4 w-32 text-xl font-semibold">
         {time
-          .toLocaleDateString("en-US", {
+          .toLocaleDateString("fr-FR", {
             year: "numeric",
             month: "numeric",
             day: "numeric",

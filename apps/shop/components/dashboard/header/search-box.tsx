@@ -1,11 +1,11 @@
 import { Input } from "@piassa/ui/components/input";
-import { Search } from "lucide-react";
+import { FaSearch } from "react-icons/fa";
 
 export const SearchBox = () => {
   return (
     <>
       <div className="bg-primary border-r-white text-xs font-light text-white">
-        <Search
+        <FaSearch
           size={12}
           className="bg-primary h-6.5 w-6.5 absolute left-3.5 top-1/2 -translate-y-1/2 transform rounded-sm border-white p-1"
         />

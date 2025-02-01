@@ -7,13 +7,13 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@piassa/ui/components/select";
-import { MapPin } from "lucide-react";
+import { FiMapPin } from "react-icons/fi";
 
 function WilayaSelect() {
   return (
     <Select>
       <SelectTrigger className="mx-2 h-11 w-[180px] gap-1 bg-[#933123] text-white">
-        <MapPin className="h-3 w-3 text-white" />
+        <FiMapPin className="h-3 w-3 text-white" />
         <SelectValue placeholder="Select Wilaya" />
       </SelectTrigger>
       <SelectContent>

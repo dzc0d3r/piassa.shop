@@ -1,8 +1,8 @@
 import "./globals.css";
 import "@piassa/ui/styles/dist/globals.css";
+import { cn } from "@piassa/lib";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,7 +18,17 @@ export default function RootLayout({
 }): React.JSX.Element {
   return (
     <html lang="en">
-      <body className={`${inter.className} bg-primary`}>{children}</body>
+      <body
+        className={cn(
+          inter.className,
+          "relative min-h-screen antialiased",
+          "before:fixed before:inset-0 before:content-['']",
+          "before:bg-[url('/wo.jpg')] before:bg-cover before:bg-center",
+          "before:-z-10 before:backdrop-blur-xl",
+        )}
+      >
+        {children}
+      </body>
     </html>
   );
 }
