@@ -1,5 +1,6 @@
 "use client";
 
+import { AddParnterForm } from "@/components/dashboard/forms";
 import { Button } from "@piassa/ui/components/button";
 import {
   Dialog,
@@ -10,8 +11,6 @@ import {
   DialogTitle,
   DialogTrigger,
 } from "@piassa/ui/components/dialog";
-import { Input } from "@piassa/ui/components/input";
-import { Label } from "@piassa/ui/components/label";
 import React from "react";
 import { AiOutlinePlus } from "react-icons/ai";
 
@@ -32,31 +31,19 @@ const PartnerCard = () => {
         <DialogContent
           onInteractOutside={(e) => e.preventDefault()} // Prevent closing on outside click
           onEscapeKeyDown={(e) => e.preventDefault()} // Prevent closing on Esc key
-          className="sm:max-w-[425px]"
+          className="max-h-[92%] min-h-[85%] min-w-[80%] max-w-[90%] overflow-scroll bg-white/70 text-black/70 backdrop-blur-md sm:max-w-[425px]"
         >
-          <DialogHeader>
-            <DialogTitle>Edit profile</DialogTitle>
-            <DialogDescription>
-              Make changes to your profile here. Click save when you&apos;re
-              done.
+          <DialogHeader className="flex items-center justify-center text-xl">
+            <DialogTitle className="text-xl">Add Partner</DialogTitle>
+            <DialogDescription className="text-xs">
+              Add new Partner here. Click Add when you&apos;re done.
             </DialogDescription>
           </DialogHeader>
-          <div className="grid gap-4 py-4">
-            <div className="grid grid-cols-4 items-center gap-4">
-              <Label htmlFor="name" className="text-right">
-                Name
-              </Label>
-              <Input id="name" className="col-span-3" />
-            </div>
-            <div className="grid grid-cols-4 items-center gap-4">
-              <Label htmlFor="username" className="text-right">
-                Username
-              </Label>
-              <Input id="username" className="col-span-3" />
-            </div>
-          </div>
-          <DialogFooter>
-            <Button type="submit">Save changes</Button>
+
+          <AddParnterForm />
+
+          <DialogFooter className="mx-3">
+            <Button type="submit">Add Partner</Button>
           </DialogFooter>
         </DialogContent>
       </Dialog>
