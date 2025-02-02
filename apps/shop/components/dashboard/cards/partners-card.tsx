@@ -25,7 +25,7 @@ const PartnerCard = () => {
             size="sm"
             className="flex gap-4 text-start font-medium transition-all duration-500 ease-in-out"
           >
-            {"Ajouter nouveax partner"}
+            Ajouter nouveax partner
             <AiOutlinePlus className="!h-5 !w-5" />
           </Button>
         </DialogTrigger>
@@ -37,7 +37,8 @@ const PartnerCard = () => {
           <DialogHeader>
             <DialogTitle>Edit profile</DialogTitle>
             <DialogDescription>
-              Make changes to your profile here. Click save when you're done.
+              Make changes to your profile here. Click save when you&apos;re
+              done.
             </DialogDescription>
           </DialogHeader>
           <div className="grid gap-4 py-4">
