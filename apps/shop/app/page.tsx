@@ -9,7 +9,7 @@ export default function Page(): React.JSX.Element {
 
       <section className="container col-span-9 mx-auto w-full">
         <Header />
-        <div className="mt-10 flex h-fit justify-end">
+        <div className="mt-10 flex h-fit">
           <PartnerCard />
         </div>
       </section>

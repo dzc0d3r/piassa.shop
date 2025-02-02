@@ -68,6 +68,7 @@ const AddParnterForm = () => {
           <Input type="text" placeholder="Enter commune" className="mt-1" />
         </div>
       </div>
+
       <div className="grid grid-cols-4 gap-3 px-3.5">
         <div className="col-span-2 mb-2">
           <Label htmlFor="email" className="text-start font-semibold">
@@ -76,20 +77,6 @@ const AddParnterForm = () => {
           <Input placeholder="Enter email" type="email" className="mt-1" />
         </div>
         <div className="col-span-2 mb-2">
-          <Label htmlFor="address" className="text-start font-semibold">
-            Address
-          </Label>
-          <Input placeholder="Enter Address" type="text" className="mt-1" />
-        </div>
-      </div>
-      <div className="grid grid-cols-4 gap-3 px-3.5">
-        <div className="col-span-2">
-          <Label htmlFor="email" className="text-start font-semibold">
-            Email
-          </Label>
-          <Input placeholder="Enter email" type="email" className="mt-1" />
-        </div>
-        <div className="col-span-2">
           <Label htmlFor="address" className="text-start font-semibold">
             Address
           </Label>
